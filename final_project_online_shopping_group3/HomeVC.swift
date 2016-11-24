@@ -32,18 +32,18 @@ class HomeVC: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         
-        let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        let isLoggedIn:Int = prefs.integerForKey("ISLOGGEDIN") as Int
-        if (isLoggedIn != 1) {
-            self.performSegueWithIdentifier("goto_login", sender: self)
-        } else {
+//        let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+//        let isLoggedIn:Int = prefs.integerForKey("ISLOGGEDIN") as Int
+//        if (isLoggedIn != 1) {
+//            self.performSegueWithIdentifier("goto_login", sender: self)
+        //} else {
            // self.usernameLabel.text = prefs.valueForKey("USERNAME") as NSString
-        }
+        //}
     }
 
 
     /*
-    // MARK: - Navigation
+    // MARK: - Navigation                                                                                responsive design json -------------- for Andreid don't delete 
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

@@ -88,7 +88,7 @@
                                     <rect key="frame" x="136" y="307" width="128" height="43"/>
                                 </variation>
                                 <connections>
-                                    <action selector="singinTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zd7-ep-AJF"/>
+                                    <action selector="singinTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uFw-V4-OH6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvU-41-NFs">
