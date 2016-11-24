@@ -46,6 +46,7 @@ class SingupVC: UIViewController {
             alertView.show()
         }
             else {
+            self.dismissViewControllerAnimated(true, completion: nil)
             
             
         }
