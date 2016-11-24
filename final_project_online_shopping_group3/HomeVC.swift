@@ -43,7 +43,7 @@ class HomeVC: UIViewController {
 
 
     /*
-    // MARK: - Navigation                                                                                responsive design json -------------- for Andreid don't delete 
+    // MARK: - Navigation                                             https://dipinkrishna.com/blog/2015/07/ios-login-signup-screen-tutorial-swift-2-xcode-7-ios-9-json/                                   responsive design json -------------- for Andreid don't delete
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
