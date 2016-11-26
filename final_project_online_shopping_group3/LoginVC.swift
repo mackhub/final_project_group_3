@@ -93,11 +93,11 @@ class LoginVC: UIViewController {
 //                        {
 //                            NSLog("Login SUCCESS");
 //                            
-//                            let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-//                            prefs.setObject(username, forKey: "USERNAME")
-//                            prefs.setInteger(1, forKey: "ISLOGGEDIN")
-//                            prefs.synchronize()
-//                            
+                            let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+                            prefs.setObject(username, forKey: "USERNAME")
+                            prefs.setInteger(1, forKey: "ISLOGGEDIN")
+                            prefs.synchronize()
+                            
                             self.dismissViewControllerAnimated(true, completion: nil)
 //                        } else {
 //                            var error_msg:NSString
