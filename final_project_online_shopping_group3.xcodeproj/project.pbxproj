@@ -86,16 +86,16 @@
 		DEB870881DDE2AD8003B183D /* final_project_online_shopping_group3 */ = {
 			isa = PBXGroup;
 			children = (
-				DEB870891DDE2AD8003B183D /* AppDelegate.swift */,
 				DEB8708D1DDE2AD8003B183D /* Main.storyboard */,
-				DEB870931DDE2AD8003B183D /* Assets.xcassets */,
 				DEB870951DDE2AD8003B183D /* LaunchScreen.storyboard */,
-				DEB870981DDE2AD8003B183D /* Info.plist */,
-				DEB870901DDE2AD8003B183D /* final_project_online_shopping_group3.xcdatamodeld */,
+				DEB870891DDE2AD8003B183D /* AppDelegate.swift */,
 				871EC7EC1DE628E30025E2F2 /* LoginVC.swift */,
 				871EC7EE1DE6292B0025E2F2 /* HomeVC.swift */,
-				DE9841F91DED081800DF3F2D /* GoogleService-Info.plist */,
 				871EC7F01DE629440025E2F2 /* SingupVC.swift */,
+				DEB870931DDE2AD8003B183D /* Assets.xcassets */,
+				DEB870901DDE2AD8003B183D /* final_project_online_shopping_group3.xcdatamodeld */,
+				DEB870981DDE2AD8003B183D /* Info.plist */,
+				DE9841F91DED081800DF3F2D /* GoogleService-Info.plist */,
 			);
 			path = final_project_online_shopping_group3;
 			sourceTree = "<group>";
