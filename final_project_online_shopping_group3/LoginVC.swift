@@ -37,7 +37,7 @@ class LoginVC: UIViewController {
             alertView.show()
         } else {
             
-//            do {
+//         //   do {
 //                let post:NSString = "username=\(username)&password=\(password)"
 //                
 //                NSLog("PostData: %@",post);
