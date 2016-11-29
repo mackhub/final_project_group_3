@@ -10,13 +10,6 @@ import UIKit
 
 class HomeVC: UIViewController {
 
-    
-    @IBOutlet var table: UITableView!
-
-   
-    // @IBOutlet var list: UITableView!
-    var Items = ["a","s","d","f"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -47,23 +40,8 @@ class HomeVC: UIViewController {
            // self.usernameLabel.text = prefs.valueForKey("USERNAME") as NSString
         }
     }
-    
-    
-        func numberofsectionsintableview(tableview: UITableView) -> Int{
-        return 1
-    }
 
-    
-    func  tableview(table View: UITableView, numberofRowsInSection section: Int) -> Int {
-        return Items.count
-    }
 
-     func tableView(tableView: UITableView, cellForRowArIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        let cell = table.dequeueReusableCellWithIdentifier("reuseIdentifier",forIndexPath: indexPath) as UITableViewCell
-        cell.textLabel?.text = Items[indexPath.row]
-        return cell
-    }
-    
     /*
     // MARK: - Navigation                                             https://dipinkrishna.com/blog/2015/07/ios-login-signup-screen-tutorial-swift-2-xcode-7-ios-9-json/                                   responsive design json -------------- for Andreid don't delete
 

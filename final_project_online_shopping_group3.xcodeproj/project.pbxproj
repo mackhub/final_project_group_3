@@ -11,7 +11,7 @@
 		871EC7ED1DE628E30025E2F2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871EC7EC1DE628E30025E2F2 /* LoginVC.swift */; };
 		871EC7EF1DE6292B0025E2F2 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871EC7EE1DE6292B0025E2F2 /* HomeVC.swift */; };
 		871EC7F11DE629440025E2F2 /* SingupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871EC7F01DE629440025E2F2 /* SingupVC.swift */; };
-		87F990C71DED07020092F87E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87F990C61DED07020092F87E /* GoogleService-Info.plist */; };
+		DE9841FA1DED081800DF3F2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE9841F91DED081800DF3F2D /* GoogleService-Info.plist */; };
 		DEB8708A1DDE2AD8003B183D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB870891DDE2AD8003B183D /* AppDelegate.swift */; };
 		DEB8708F1DDE2AD8003B183D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEB8708D1DDE2AD8003B183D /* Main.storyboard */; };
 		DEB870921DDE2AD8003B183D /* final_project_online_shopping_group3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEB870901DDE2AD8003B183D /* final_project_online_shopping_group3.xcdatamodeld */; };
@@ -25,7 +25,8 @@
 		871EC7EC1DE628E30025E2F2 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		871EC7EE1DE6292B0025E2F2 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		871EC7F01DE629440025E2F2 /* SingupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingupVC.swift; sourceTree = "<group>"; };
-		87F990C61DED07020092F87E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D23ABB257AF0654BC90AD3CF /* Pods-final_project_online_shopping_group3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-final_project_online_shopping_group3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-final_project_online_shopping_group3/Pods-final_project_online_shopping_group3.debug.xcconfig"; sourceTree = "<group>"; };
+		DE9841F91DED081800DF3F2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DEB870861DDE2AD8003B183D /* final_project_online_shopping_group3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = final_project_online_shopping_group3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB870891DDE2AD8003B183D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEB8708E1DDE2AD8003B183D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,8 +86,6 @@
 		DEB870881DDE2AD8003B183D /* final_project_online_shopping_group3 */ = {
 			isa = PBXGroup;
 			children = (
-				87F990C61DED07020092F87E /* GoogleService-Info.plist */,
-				DEB870891DDE2AD8003B183D /* AppDelegate.swift */,
 				DEB8708D1DDE2AD8003B183D /* Main.storyboard */,
 				DEB870951DDE2AD8003B183D /* LaunchScreen.storyboard */,
 				DEB870891DDE2AD8003B183D /* AppDelegate.swift */,
@@ -163,7 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEB870971DDE2AD8003B183D /* LaunchScreen.storyboard in Resources */,
-				87F990C71DED07020092F87E /* GoogleService-Info.plist in Resources */,
+				DE9841FA1DED081800DF3F2D /* GoogleService-Info.plist in Resources */,
 				DEB870941DDE2AD8003B183D /* Assets.xcassets in Resources */,
 				DEB8708F1DDE2AD8003B183D /* Main.storyboard in Resources */,
 			);
@@ -294,10 +293,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"$(OTHER_LDFLAGS)",
-					"-ObjC",
-				);
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -336,10 +331,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = (
-					"$(OTHER_LDFLAGS)",
-					"-ObjC",
-				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -350,10 +341,6 @@
 			baseConfigurationReference = D23ABB257AF0654BC90AD3CF /* Pods-final_project_online_shopping_group3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/final_project_online_shopping_group3",
-				);
 				INFOPLIST_FILE = final_project_online_shopping_group3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.deanza.mhashemi.final-project-online-shopping-group3";
@@ -366,10 +353,6 @@
 			baseConfigurationReference = 139006035A7BE0340B585DA9 /* Pods-final_project_online_shopping_group3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/final_project_online_shopping_group3",
-				);
 				INFOPLIST_FILE = final_project_online_shopping_group3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.deanza.mhashemi.final-project-online-shopping-group3";
