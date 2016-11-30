@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		0C6BD7ABD2627F2B38CFA23C /* Pods_final_project_online_shopping_group3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7188C96D5F041FA017CD87CA /* Pods_final_project_online_shopping_group3.framework */; };
 		871EC7ED1DE628E30025E2F2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871EC7EC1DE628E30025E2F2 /* LoginVC.swift */; };
-		871EC7EF1DE6292B0025E2F2 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871EC7EE1DE6292B0025E2F2 /* HomeVC.swift */; };
 		871EC7F11DE629440025E2F2 /* SingupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871EC7F01DE629440025E2F2 /* SingupVC.swift */; };
+		87DD94CB1DEE6896002BA312 /* TableViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DD94CA1DEE6896002BA312 /* TableViewHome.swift */; };
+		87DD94CE1DEE6E38002BA312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87DD94CC1DEE6E38002BA312 /* Main.storyboard */; };
+		87DD94D01DEE7313002BA312 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DD94CF1DEE7313002BA312 /* MyTableViewCell.swift */; };
 		DE9841FA1DED081800DF3F2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE9841F91DED081800DF3F2D /* GoogleService-Info.plist */; };
 		DEB8708A1DDE2AD8003B183D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB870891DDE2AD8003B183D /* AppDelegate.swift */; };
-		DEB8708F1DDE2AD8003B183D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEB8708D1DDE2AD8003B183D /* Main.storyboard */; };
 		DEB870921DDE2AD8003B183D /* final_project_online_shopping_group3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEB870901DDE2AD8003B183D /* final_project_online_shopping_group3.xcdatamodeld */; };
 		DEB870941DDE2AD8003B183D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB870931DDE2AD8003B183D /* Assets.xcassets */; };
 		DEB870971DDE2AD8003B183D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEB870951DDE2AD8003B183D /* LaunchScreen.storyboard */; };
@@ -23,13 +24,14 @@
 		139006035A7BE0340B585DA9 /* Pods-final_project_online_shopping_group3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-final_project_online_shopping_group3.release.xcconfig"; path = "Pods/Target Support Files/Pods-final_project_online_shopping_group3/Pods-final_project_online_shopping_group3.release.xcconfig"; sourceTree = "<group>"; };
 		7188C96D5F041FA017CD87CA /* Pods_final_project_online_shopping_group3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_final_project_online_shopping_group3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		871EC7EC1DE628E30025E2F2 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		871EC7EE1DE6292B0025E2F2 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		871EC7F01DE629440025E2F2 /* SingupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingupVC.swift; sourceTree = "<group>"; };
+		87DD94CA1DEE6896002BA312 /* TableViewHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHome.swift; sourceTree = "<group>"; };
+		87DD94CD1DEE6E38002BA312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87DD94CF1DEE7313002BA312 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		D23ABB257AF0654BC90AD3CF /* Pods-final_project_online_shopping_group3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-final_project_online_shopping_group3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-final_project_online_shopping_group3/Pods-final_project_online_shopping_group3.debug.xcconfig"; sourceTree = "<group>"; };
 		DE9841F91DED081800DF3F2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DEB870861DDE2AD8003B183D /* final_project_online_shopping_group3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = final_project_online_shopping_group3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB870891DDE2AD8003B183D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DEB8708E1DDE2AD8003B183D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEB870911DDE2AD8003B183D /* final_project_online_shopping_group3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = final_project_online_shopping_group3.xcdatamodel; sourceTree = "<group>"; };
 		DEB870931DDE2AD8003B183D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEB870961DDE2AD8003B183D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,16 +88,17 @@
 		DEB870881DDE2AD8003B183D /* final_project_online_shopping_group3 */ = {
 			isa = PBXGroup;
 			children = (
-				DEB8708D1DDE2AD8003B183D /* Main.storyboard */,
 				DEB870951DDE2AD8003B183D /* LaunchScreen.storyboard */,
+				87DD94CC1DEE6E38002BA312 /* Main.storyboard */,
 				DEB870891DDE2AD8003B183D /* AppDelegate.swift */,
 				871EC7EC1DE628E30025E2F2 /* LoginVC.swift */,
-				871EC7EE1DE6292B0025E2F2 /* HomeVC.swift */,
 				871EC7F01DE629440025E2F2 /* SingupVC.swift */,
 				DEB870931DDE2AD8003B183D /* Assets.xcassets */,
 				DEB870901DDE2AD8003B183D /* final_project_online_shopping_group3.xcdatamodeld */,
 				DEB870981DDE2AD8003B183D /* Info.plist */,
 				DE9841F91DED081800DF3F2D /* GoogleService-Info.plist */,
+				87DD94CA1DEE6896002BA312 /* TableViewHome.swift */,
+				87DD94CF1DEE7313002BA312 /* MyTableViewCell.swift */,
 			);
 			path = final_project_online_shopping_group3;
 			sourceTree = "<group>";
@@ -164,7 +167,7 @@
 				DEB870971DDE2AD8003B183D /* LaunchScreen.storyboard in Resources */,
 				DE9841FA1DED081800DF3F2D /* GoogleService-Info.plist in Resources */,
 				DEB870941DDE2AD8003B183D /* Assets.xcassets in Resources */,
-				DEB8708F1DDE2AD8003B183D /* Main.storyboard in Resources */,
+				87DD94CE1DEE6E38002BA312 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,19 +228,20 @@
 			files = (
 				871EC7F11DE629440025E2F2 /* SingupVC.swift in Sources */,
 				DEB870921DDE2AD8003B183D /* final_project_online_shopping_group3.xcdatamodeld in Sources */,
-				871EC7EF1DE6292B0025E2F2 /* HomeVC.swift in Sources */,
+				87DD94CB1DEE6896002BA312 /* TableViewHome.swift in Sources */,
 				871EC7ED1DE628E30025E2F2 /* LoginVC.swift in Sources */,
 				DEB8708A1DDE2AD8003B183D /* AppDelegate.swift in Sources */,
+				87DD94D01DEE7313002BA312 /* MyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DEB8708D1DDE2AD8003B183D /* Main.storyboard */ = {
+		87DD94CC1DEE6E38002BA312 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DEB8708E1DDE2AD8003B183D /* Base */,
+				87DD94CD1DEE6E38002BA312 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
