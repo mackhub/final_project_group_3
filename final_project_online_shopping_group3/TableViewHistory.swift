@@ -1,35 +1,28 @@
 //
-//  TableViewHome.swift
+//  TableViewHistory.swift
 //  final_project_online_shopping_group3
 //
-//  Created by Andrei  Konovalov on 11/29/16.
+//  Created by Andrei  Konovalov on 11/30/16.
 //  Copyright © 2016 DeAnza. All rights reserved.
 //
 
 import UIKit
 
-class TableViewHome: UITableViewController {
-    var items = ["a","f","d","f","g","h"]
-    var amount = ["1","2","3","4","5","6"]
-    var lbl: String = ""
+class TableViewHistory: UITableViewController {
+
+    @IBAction func logoutTapped(sender: UIButton) {
+            self.performSegueWithIdentifier("goto_login", sender: self)
+    }
         override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-        
+
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-    override func viewWillAppear(animated: Bool) {
-        super.viewDidAppear(true)
-        
-        let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        let isLoggedIn:Int = prefs.integerForKey("ISLOGGEDIN") as Int
-        if (isLoggedIn != 1) {
-            self.performSegueWithIdentifier("goto_login", sender: self)
-        }
-    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -39,56 +32,23 @@ class TableViewHome: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return items.count
+        return 0
     }
-    
-    
 
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cellIdentifire = "ToDoCell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifire, forIndexPath: indexPath) as! MyTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
         // Configure the cell...
-        cell.cellItemName.text = items[indexPath.row]
-        //cell.cellItemAmount.text = amount[indexPath.row]
-        //lbl = cell.lblValue.text!
+
         return cell
     }
-    // need to find out how to get lblValue data from the cell file  to shot it in the alertdialog message 
-    //===========================
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        var alert = UIAlertController(title: "Added " + items[indexPath.row] + " to the Bin", message: lbl , preferredStyle: .Alert)
-        
-        
-        alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler:{ (UIAlertAction) in
-            print("cancel logic") }))
-        
-        alert.addAction(UIAlertAction(title: "Done", style: .Default, handler:{ (UIAlertAction) in
-            print("Done !!")
-            
-        }))
-        
-        self.presentViewController(alert, animated: true, completion: {
-            print("completion block")
-        })
-           }
-//        var selectedItem = items[indexPath.row]
-//        let msgAlert = UIAlertView()
-//        msgAlert.title = "Add " + items[indexPath.row] + " to the Bin"
-//        msgAlert.addButtonWithTitle("Ok")
-//        msgAlert.alertViewStyle = UIAlertViewStyle.PlainTextInput
-//        msgAlert.addButtonWithTitle("Cancel")
-//        msgAlert.show()
-//        
-//        let txtField = msgAlert.textFieldAtIndex(0)
-//        txtField!.placeholder = "Enter amount of items"
-//        print(txtField!.text)    }
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -125,13 +85,6 @@ class TableViewHome: UITableViewController {
     }
     */
 
-    @IBAction func logoutTapped(sender: UIButton) {
-        self.performSegueWithIdentifier("goto_login", sender: self)
-    }
-//    @IBAction func logoutTapped(sender: UIButton) {
-//        self.performSegueWithIdentifier("goto_login", sender: self)
-    
-    }
     /*
     // MARK: - Navigation
 
@@ -142,5 +95,4 @@ class TableViewHome: UITableViewController {
     }
     */
 
-
-
+}

@@ -10,8 +10,14 @@ import UIKit
 
 class MyTableViewCell: UITableViewCell {
 
-    @IBOutlet var cellItemAmount: UILabel!
+   // @IBOutlet var cellItemAmount: UILabel!
+    @IBOutlet var stepper: UIStepper!
+    @IBOutlet var lblValue: UILabel!
     @IBOutlet var cellItemName: UILabel!
+    
+    @IBAction func stepperValueChanged(sender: UIStepper) {
+    lblValue.text = Int(sender.value).description
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
