@@ -56,14 +56,14 @@ class TableViewHome: UITableViewController {
         // Configure the cell...
         cell.cellItemName.text = items[indexPath.row]
         //cell.cellItemAmount.text = amount[indexPath.row]
-        //lbl = cell.lblValue.text!
-        return cell
+               return cell
     }
     // need to find out how to get lblValue data from the cell file  to shot it in the alertdialog message 
     //===========================
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        var alert = UIAlertController(title: "Added " + items[indexPath.row] + " to the Bin", message: lbl , preferredStyle: .Alert)
+        var alert = UIAlertController(title: "Added " + items[indexPath.row] + " to the Bin", message:  "", preferredStyle: .Alert)
         
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler:{ (UIAlertAction) in

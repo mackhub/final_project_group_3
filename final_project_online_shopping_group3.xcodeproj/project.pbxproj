@@ -10,6 +10,8 @@
 		0C6BD7ABD2627F2B38CFA23C /* Pods_final_project_online_shopping_group3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7188C96D5F041FA017CD87CA /* Pods_final_project_online_shopping_group3.framework */; };
 		871EC7ED1DE628E30025E2F2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871EC7EC1DE628E30025E2F2 /* LoginVC.swift */; };
 		871EC7F11DE629440025E2F2 /* SingupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871EC7F01DE629440025E2F2 /* SingupVC.swift */; };
+		878B1C3D1DEFD1A9002A1CC7 /* BinTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878B1C3C1DEFD1A9002A1CC7 /* BinTV.swift */; };
+		878B1C3F1DEFD57E002A1CC7 /* BinTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878B1C3E1DEFD57E002A1CC7 /* BinTVCell.swift */; };
 		87CEF3181DEF720F00EFD03E /* TableViewHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CEF3171DEF720F00EFD03E /* TableViewHistory.swift */; };
 		87CEF31A1DEF729300EFD03E /* PofileVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CEF3191DEF729300EFD03E /* PofileVCViewController.swift */; };
 		87CEF31C1DEF72BF00EFD03E /* BinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CEF31B1DEF72BF00EFD03E /* BinVC.swift */; };
@@ -28,6 +30,8 @@
 		7188C96D5F041FA017CD87CA /* Pods_final_project_online_shopping_group3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_final_project_online_shopping_group3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		871EC7EC1DE628E30025E2F2 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		871EC7F01DE629440025E2F2 /* SingupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingupVC.swift; sourceTree = "<group>"; };
+		878B1C3C1DEFD1A9002A1CC7 /* BinTV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinTV.swift; sourceTree = "<group>"; };
+		878B1C3E1DEFD57E002A1CC7 /* BinTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinTVCell.swift; sourceTree = "<group>"; };
 		87CEF3171DEF720F00EFD03E /* TableViewHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHistory.swift; sourceTree = "<group>"; };
 		87CEF3191DEF729300EFD03E /* PofileVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PofileVCViewController.swift; sourceTree = "<group>"; };
 		87CEF31B1DEF72BF00EFD03E /* BinVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinVC.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				87CEF3171DEF720F00EFD03E /* TableViewHistory.swift */,
 				87CEF3191DEF729300EFD03E /* PofileVCViewController.swift */,
 				87CEF31B1DEF72BF00EFD03E /* BinVC.swift */,
+				878B1C3C1DEFD1A9002A1CC7 /* BinTV.swift */,
+				878B1C3E1DEFD57E002A1CC7 /* BinTVCell.swift */,
 			);
 			path = final_project_online_shopping_group3;
 			sourceTree = "<group>";
@@ -240,10 +246,12 @@
 				87DD94CB1DEE6896002BA312 /* TableViewHome.swift in Sources */,
 				871EC7ED1DE628E30025E2F2 /* LoginVC.swift in Sources */,
 				DEB8708A1DDE2AD8003B183D /* AppDelegate.swift in Sources */,
+				878B1C3D1DEFD1A9002A1CC7 /* BinTV.swift in Sources */,
 				87CEF3181DEF720F00EFD03E /* TableViewHistory.swift in Sources */,
 				87CEF31A1DEF729300EFD03E /* PofileVCViewController.swift in Sources */,
 				87CEF31C1DEF72BF00EFD03E /* BinVC.swift in Sources */,
 				87DD94D01DEE7313002BA312 /* MyTableViewCell.swift in Sources */,
+				878B1C3F1DEFD57E002A1CC7 /* BinTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
