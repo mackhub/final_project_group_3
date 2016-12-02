@@ -14,7 +14,7 @@ class LoginVC: UIViewController {
     @IBOutlet var txtUsername: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "TEXTURA_AZUL2")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "backGroundLogin")!)
 //
         // Do any additional setup after loading the view.
     }
