@@ -17,7 +17,6 @@
 		DEB870921DDE2AD8003B183D /* final_project_online_shopping_group3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEB870901DDE2AD8003B183D /* final_project_online_shopping_group3.xcdatamodeld */; };
 		DEB870941DDE2AD8003B183D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB870931DDE2AD8003B183D /* Assets.xcassets */; };
 		DEB870971DDE2AD8003B183D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEB870951DDE2AD8003B183D /* LaunchScreen.storyboard */; };
-		F6181D8A1DF608B9000311F4 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6181D891DF608B9000311F4 /* data.txt */; };
 		F6181D8C1DF61B10000311F4 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6181D8B1DF61B10000311F4 /* HomeTableViewController.swift */; };
 		F6181D8E1DF61F79000311F4 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6181D8D1DF61F79000311F4 /* HomeTableViewCell.swift */; };
 		F6181D901DF62236000311F4 /* BinTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6181D8F1DF62236000311F4 /* BinTableViewController.swift */; };
@@ -40,7 +39,6 @@
 		DEB870931DDE2AD8003B183D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEB870961DDE2AD8003B183D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEB870981DDE2AD8003B183D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6181D891DF608B9000311F4 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = SOURCE_ROOT; };
 		F6181D8B1DF61B10000311F4 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		F6181D8D1DF61F79000311F4 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		F6181D8F1DF62236000311F4 /* BinTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BinTableViewController.swift; path = ../BinTableViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				F6181D8F1DF62236000311F4 /* BinTableViewController.swift */,
-				F6181D891DF608B9000311F4 /* data.txt */,
 				DEB870951DDE2AD8003B183D /* LaunchScreen.storyboard */,
 				87DD94CC1DEE6E38002BA312 /* Main.storyboard */,
 				F6181D911DF623B0000311F4 /* BinTableViewCell.swift */,
@@ -183,7 +180,6 @@
 				DE9841FA1DED081800DF3F2D /* GoogleService-Info.plist in Resources */,
 				DEB870941DDE2AD8003B183D /* Assets.xcassets in Resources */,
 				87DD94CE1DEE6E38002BA312 /* Main.storyboard in Resources */,
-				F6181D8A1DF608B9000311F4 /* data.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
