@@ -7,14 +7,10 @@
 //
 
 import UIKit
+import CoreData
 
-class Item: NSObject {
-    var name = ""
-    var image = ""
-    var amount: Int
-    init(Name: String,Image:String,Price:Int){
-        self.name = Name
-        self.image = Image
-        self.amount = Price
-    }
+class Item: NSManagedObject {
+    @NSManaged var name: String!
+    @NSManaged var image: String!
+    @NSManaged var amount: NSNumber!
 }

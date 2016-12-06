@@ -180,11 +180,17 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="e4p-fs-JQv">
-                                            <rect key="frame" x="150" y="40" width="94" height="29"/>
+                                            <rect key="frame" x="83" y="42" width="94" height="29"/>
                                             <connections>
                                                 <action selector="stepped:" destination="beV-jc-m5Q" eventType="valueChanged" id="kzZ-ZT-8gm"/>
                                             </connections>
                                         </stepper>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0u-zr-JBT">
+                                            <rect key="frame" x="211" y="46" width="81" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottomMargin" secondItem="nm7-EQ-vcn" secondAttribute="bottom" id="8OI-MA-0Bc"/>
@@ -196,6 +202,7 @@
                                     <outlet property="cellimage" destination="nm7-EQ-vcn" id="k7p-pL-rdY"/>
                                     <outlet property="cellname" destination="qRF-zk-nzJ" id="PYJ-t1-MlZ"/>
                                     <outlet property="cellstepper" destination="e4p-fs-JQv" id="cgj-Or-DVQ"/>
+                                    <outlet property="lblStepperData" destination="R0u-zr-JBT" id="YFG-qr-c7g"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

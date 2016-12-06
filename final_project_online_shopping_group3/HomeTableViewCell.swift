@@ -10,6 +10,7 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
 
+    @IBOutlet var lblStepperData: UILabel!
     @IBOutlet var cellstepper: UIStepper!
     @IBOutlet var cellimage: UIImageView!
     @IBOutlet var cellname: UILabel!
@@ -19,7 +20,8 @@ class HomeTableViewCell: UITableViewCell {
     }
 
     @IBAction func stepped(sender: UIStepper) {
-    
+    lblStepperData.text = String(sender.value)
+        
     }
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

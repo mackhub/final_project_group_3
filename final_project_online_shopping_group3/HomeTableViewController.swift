@@ -7,12 +7,13 @@
 //
 
 import UIKit
-
+import CoreData
 class HomeTableViewController: UITableViewController {
 
     
     var Items:[Item] = []
-        
+    let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+
     
     
     
@@ -21,9 +22,16 @@ class HomeTableViewController: UITableViewController {
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        let fr = NSFetchRequest(entityName:"Data")
+        var e: NSError?
+        do {
+            try self.Items = self.moc.executeFetchRequest(fr) as! [Item]
+        }
+        catch is NSError {
+            print("error")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,7 +48,7 @@ class HomeTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
     }
 
     
