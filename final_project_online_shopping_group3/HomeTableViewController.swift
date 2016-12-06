@@ -51,11 +51,13 @@ class HomeTableViewController: UITableViewController {
 
         cell.cellimage?.frame = CGRect (x: 0.0, y: 0.0, width: 60, height: 60)
         cell.cellimage?.layer.cornerRadius = cell.cellimage.frame.size.width/2.0
-        cell.cellimage?.clipsToBounds = 
+        cell.cellimage?.clipsToBounds = true
+        cell.cellimage?.layer.masksToBounds = true
         cell.cellimage?.image = UIImage(named:Items[indexPath.row].image)
         //stepperlogic________________________________________________ must be written in this file
         // Configure the cell...
-
+        cell.alpha = 0
+        UIView.animateWithDuration(2, animations: {cell.alpha = 1})
         return cell
     }
     

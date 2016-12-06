@@ -45,12 +45,18 @@ class BinTableViewController: UITableViewController {
         let cellidntifier = "BinCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellidntifier, forIndexPath: indexPath) as! BinTableViewCell
         
-        cell.cellimage?.image = UIImage(named:Orders[indexPath.row].image)
+       // cell.cellimage?.image = UIImage(named:Orders[indexPath.row].image)
         cell.cellname?.text = Orders[indexPath.row].name
         cell.cellamount?.text = String(Orders[indexPath.row].amount)
         
-        // Configure the cell...
-        
+        cell.cellimage?.frame = CGRect (x: 0.0, y: 0.0, width: 60, height: 60)
+        cell.cellimage?.layer.cornerRadius = cell.cellimage.frame.size.width/2.0
+        cell.cellimage?.clipsToBounds = true
+        cell.cellimage?.layer.masksToBounds = true
+        cell.cellimage?.image = UIImage(named:Orders[indexPath.row].image)
+       
+        cell.alpha = 0
+        UIView.animateWithDuration(2, animations: {cell.alpha = 1})
         return cell
     }
 
