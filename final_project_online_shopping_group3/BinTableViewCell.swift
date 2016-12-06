@@ -1,23 +1,18 @@
 //
-//  MyTableViewCell.swift
+//  BinTableViewCell.swift
 //  final_project_online_shopping_group3
 //
-//  Created by Andrei  Konovalov on 11/29/16.
+//  Created by Andrei Konovalov on 12/5/16.
 //  Copyright © 2016 DeAnza. All rights reserved.
 //
 
 import UIKit
 
-class MyTableViewCell: UITableViewCell {
+class BinTableViewCell: UITableViewCell {
 
-   // @IBOutlet var cellItemAmount: UILabel!
-    @IBOutlet var stepper: UIStepper!
-    @IBOutlet var lblValue: UILabel!
-    @IBOutlet var cellItemName: UILabel!
-    
-    @IBAction func stepperValueChanged(sender: UIStepper) {
-    lblValue.text = Int(sender.value).description
-    }
+    @IBOutlet var cellamount: UILabel!
+    @IBOutlet var cellimage: UIImageView!
+    @IBOutlet var cellname: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
