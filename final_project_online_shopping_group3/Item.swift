@@ -9,8 +9,24 @@
 import UIKit
 import CoreData
 
-class Item: NSManagedObject {
-    @NSManaged var name: String!
-    @NSManaged var image: String!
-    @NSManaged var amount: NSNumber!
+import UIKit
+import CoreData
+
+class Item: /*NSManagedObject*/NSObject {
+   // @NSManaged
+    var Name: String!
+    //@NSManaged
+    var ImageS: String!
+    //@NSManaged
+    var ImageL: String!
+    //@NSManaged
+    var Price: NSNumber!
+    init(Name: String, ImageS: String, ImageL: String, Price: NSNumber)
+    {
+        self.Name = Name
+        self.ImageS = ImageS
+        self.ImageL = ImageL
+        self.Price = Price
+        
+    }
 }

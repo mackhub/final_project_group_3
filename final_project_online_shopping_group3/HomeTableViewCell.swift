@@ -10,6 +10,7 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
 
+    @IBOutlet var cellprice: UILabel!
     @IBOutlet var lblStepperData: UILabel!
     @IBOutlet var cellstepper: UIStepper!
     @IBOutlet var cellimage: UIImageView!

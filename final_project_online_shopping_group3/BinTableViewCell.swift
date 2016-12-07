@@ -10,6 +10,7 @@ import UIKit
 
 class BinTableViewCell: UITableViewCell {
 
+    @IBOutlet var celltotprice: UILabel!
     @IBOutlet var cellamount: UILabel!
     @IBOutlet var cellimage: UIImageView!
     @IBOutlet var cellname: UILabel!
