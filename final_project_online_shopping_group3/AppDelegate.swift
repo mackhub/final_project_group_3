@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
  //       FIRApp.configure()
+        UITabBar.appearance().tintColor = UIColor(patternImage: UIImage(named: "b1")!)
+        UITabBar.appearance().barTintColor = UIColor(patternImage: UIImage(named: "b2")!)
         return true
     }
 
