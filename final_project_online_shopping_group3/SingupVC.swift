@@ -17,6 +17,7 @@ class SingupVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "b2")!)
     }
 
     override func didReceiveMemoryWarning() {

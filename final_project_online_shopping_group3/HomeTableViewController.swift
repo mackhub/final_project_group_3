@@ -33,7 +33,15 @@ class HomeTableViewController: UITableViewController {
             print("error")
         }
     }
-
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        let prefs: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        let isLogged:Int = 2//= prefs.integerForKey("ISLOGGEDIN") as Int
+        if (isLogged != 1){
+            self.performSegueWithIdentifier("goto_login", sender: self)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
