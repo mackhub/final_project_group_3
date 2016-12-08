@@ -117,6 +117,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="az3-9Z-Y3P">
+                            <rect key="frame" x="0.0" y="100" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="SIGN OUT"/>
+                            <connections>
+                                <action selector="signout:" destination="Jgf-7G-33w" eventType="touchUpInside" id="hDP-Fi-A3v"/>
+                                <segue destination="BYZ-38-t0r" kind="modal" identifier="goto_login" id="jBv-Yn-eUC"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BinCell" rowHeight="72" id="SZi-SV-Ugt" customClass="BinTableViewCell" customModule="final_project_online_shopping_group3" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="72"/>
@@ -203,6 +212,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NoD-IQ-cj7">
+                            <rect key="frame" x="0.0" y="100" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="SIGN OUT"/>
+                            <connections>
+                                <action selector="singout:" destination="nl0-TE-9Rr" eventType="touchUpInside" id="hJi-hg-7N9"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeCell" rowHeight="72" id="beV-jc-m5Q" customClass="HomeTableViewCell" customModule="final_project_online_shopping_group3" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="72"/>
@@ -375,7 +392,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1656" y="533"/>
+            <point key="canvasLocation" x="1668" y="147"/>
         </scene>
         <!--View Controller - SingUp-->
         <scene sceneID="0Nz-G9-xI4">
@@ -483,4 +500,7 @@
             <point key="canvasLocation" x="-7" y="1192"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jBv-Yn-eUC"/>
+    </inferredMetricsTieBreakers>
 </document>

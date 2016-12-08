@@ -9,16 +9,34 @@ import UIKit
 import CoreData
 
 class BinTableViewController: UITableViewController {
-    let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     var Orders:[Order] = []
     
     
+    @IBAction func signout(sender: UIButton) {
+        
+        let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+        let fr = NSFetchRequest(entityName: "Data")
+        do{
+            let res = try moc.executeFetchRequest(fr)
+            for moca in res{
+                let mocal:NSManagedObject = moca as! NSManagedObject
+                moc.deleteObject(mocal)
+            }
+        }catch {
+            print("error")
+        }
+        self.performSegueWithIdentifier("goto_login", sender: self)
+    }
+
+    
     override func viewWillAppear(animated: Bool) {
+        let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+
         let fr = NSFetchRequest(entityName: "Data")
         var e: NSError?
         
         do {
-            try self.Orders = self.moc.executeFetchRequest(fr) as! [Order]
+            try self.Orders = moc.executeFetchRequest(fr) as! [Order]
         }
         catch is NSError {
             print("error")
@@ -31,7 +49,8 @@ class BinTableViewController: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -41,7 +60,7 @@ class BinTableViewController: UITableViewController {
         var e: NSError?
         
         do {
-            try self.Orders = self.moc.executeFetchRequest(fr) as! [Order]
+            try self.Orders = moc.executeFetchRequest(fr) as! [Order]
         }
         catch is NSError {
             print("error")

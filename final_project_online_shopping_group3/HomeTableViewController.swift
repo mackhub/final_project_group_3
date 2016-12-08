@@ -34,7 +34,22 @@ class HomeTableViewController: UITableViewController, UISearchResultsUpdating {
         Item(Name:"Microsoft Surface Pro 3",ImageS:"19 60", ImageL:"19 350",Price:666),
         Item(Name:"New MacBook Pro ",ImageS:"20 60", ImageL:"20 350",Price:1799)
     ]
+   
 
+    @IBAction func singout(sender: UIButton) {
+        self.performSegueWithIdentifier("goto_login", sender: self)
+        let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+        let fr = NSFetchRequest(entityName: "Data")
+        do{
+        let res = try moc.executeFetchRequest(fr)
+            for moca in res{
+                let mocal:NSManagedObject = moca as! NSManagedObject
+                moc.deleteObject(mocal)
+            }
+        }catch {
+            print("error")
+        }}
+        
     var SVarr = [Int](count: 20, repeatedValue: 0)
    
     var NewOrder: Order!
