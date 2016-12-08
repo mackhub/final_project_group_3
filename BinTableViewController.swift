@@ -23,9 +23,10 @@ class BinTableViewController: UITableViewController {
         catch is NSError {
             print("error")
         }
-        //Orders = moc.executeFetchRequest(fr) as! [Order]
-        if e != nil {
-        }
+        self.tableView.reloadData()
+//        //Orders = moc.executeFetchRequest(fr) as! [Order]
+//        if e != nil {
+//        }
     
     }
     override func viewDidLoad() {
@@ -59,12 +60,13 @@ class BinTableViewController: UITableViewController {
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return self.Orders.count
+           return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+     
+        return self.Orders.count
     }
     
     
@@ -72,14 +74,14 @@ class BinTableViewController: UITableViewController {
         let cellidntifier = "BinCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellidntifier, forIndexPath: indexPath) as! BinTableViewCell
         
-        cell.cellname?.text = Orders[indexPath.row].Name
-        cell.cellamount?.text = String(Orders[indexPath.row].TotPrice)
-        
+        cell.cellname?.text = Orders[indexPath.row].name
+        cell.cellamount?.text = String(Orders[indexPath.row].amount)
+        cell.celltotprice?.text = String(Double(Orders[indexPath.row].price) * Double(Orders[indexPath.row].amount))
         cell.cellimage?.frame = CGRect (x: 0.0, y: 0.0, width: 60, height: 60)
         cell.cellimage?.layer.cornerRadius = cell.cellimage.frame.size.width/2.0
         cell.cellimage?.clipsToBounds = true
         cell.cellimage?.layer.masksToBounds = true
-        cell.cellimage?.image = UIImage(named:Orders[indexPath.row].ImageS)
+        cell.cellimage?.image = UIImage(named:Orders[indexPath.row].image)
         //stepperlogic________________________________________________ must be written in this file
         // Configure the cell...
         cell.alpha = 0

@@ -11,10 +11,10 @@ import CoreData
 
 class Order: NSManagedObject {
     
-        @NSManaged var Name: String!
-        @NSManaged var ImageS: String!
-        @NSManaged var Amount: NSNumber!
-        @NSManaged var TotPrice: NSNumber!
+        @NSManaged var name: String!
+        @NSManaged var image: String!
+        @NSManaged var amount: NSNumber!
+        @NSManaged var price: NSNumber!
     
 //        init(Name: String, ImageS: String, ImageL: String, Price: NSNumber)
 //        {

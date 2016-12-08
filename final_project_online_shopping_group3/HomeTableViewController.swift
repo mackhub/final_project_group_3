@@ -146,13 +146,21 @@ class HomeTableViewController: UITableViewController, UISearchResultsUpdating {
 
             self.NewOrder = NSEntityDescription.insertNewObjectForEntityForName("Data", inManagedObjectContext: moc) as! Order
             
-            self.NewOrder.Name = self.Items[indexPath.row].Name
+            self.NewOrder.name = self.Items[indexPath.row].Name
+            print(self.Items[indexPath.row].Name)
             
-            self.NewOrder.ImageS = self.Items[indexPath.row].ImageS
+            self.NewOrder.image = self.Items[indexPath.row].ImageS
+            print(self.Items[indexPath.row].ImageS)
             let a: Int = 3
-            self.NewOrder.TotPrice = self.Items[indexPath.row].Price
-            self.NewOrder.Amount = self.SVarr[indexPath.row]
-            
+            self.NewOrder.price = self.Items[indexPath.row].Price
+            self.NewOrder.amount = (self.tableView.cellForRowAtIndexPath(indexPath) as! HomeTableViewCell).cellstepper.value
+           // var e: NSError
+            do{
+                try moc.save()
+            }
+            catch {
+                print("error")
+            }
         }))
         
         self.presentViewController(alert, animated: true, completion: {
