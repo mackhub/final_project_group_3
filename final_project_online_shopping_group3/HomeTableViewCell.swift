@@ -21,7 +21,7 @@ class HomeTableViewCell: UITableViewCell {
     }
 
     @IBAction func stepped(sender: UIStepper) {
-    lblStepperData.text = String(sender.value)
+    lblStepperData.text = String(Int(sender.value))
         
     }
     override func setSelected(selected: Bool, animated: Bool) {

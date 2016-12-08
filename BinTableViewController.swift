@@ -95,7 +95,7 @@ class BinTableViewController: UITableViewController {
         
         cell.cellname?.text = Orders[indexPath.row].name
         cell.cellamount?.text = String(Orders[indexPath.row].amount)
-        cell.celltotprice?.text = String(Double(Orders[indexPath.row].price) * Double(Orders[indexPath.row].amount))
+        cell.celltotprice?.text = String(Int(Double(Orders[indexPath.row].price) * Double(Orders[indexPath.row].amount)))
         cell.cellimage?.frame = CGRect (x: 0.0, y: 0.0, width: 60, height: 60)
         cell.cellimage?.layer.cornerRadius = cell.cellimage.frame.size.width/2.0
         cell.cellimage?.clipsToBounds = true
